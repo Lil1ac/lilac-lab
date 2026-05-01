@@ -1,5 +1,9 @@
 import type { GalgameRecord, LibraryFilters } from "./types";
 
+function getYearFromDateString(date: string) {
+  return Number(date.slice(0, 4));
+}
+
 export function getSortedAndFilteredLibrary(records: GalgameRecord[], filters: LibraryFilters = {}) {
   const status = filters.status ?? "all";
   const sort = filters.sort ?? "updatedAt";
@@ -8,7 +12,7 @@ export function getSortedAndFilteredLibrary(records: GalgameRecord[], filters: L
     .filter((record) => status === "all" || record.status === status)
     .filter((record) => !filters.tag || record.tags.includes(filters.tag))
     .filter((record) => !filters.minRating || record.personalRating >= filters.minRating)
-    .filter((record) => !filters.year || new Date(record.startDate).getFullYear() === filters.year)
+    .filter((record) => !filters.year || getYearFromDateString(record.startDate) === filters.year)
     .sort((left, right) => {
       if (sort === "personalRating") {
         return right.personalRating - left.personalRating;
@@ -27,7 +31,7 @@ export function getLibraryTags(records: GalgameRecord[]) {
 }
 
 export function getLibraryYears(records: GalgameRecord[]) {
-  return Array.from(new Set(records.map((record) => new Date(record.startDate).getFullYear()))).sort(
+  return Array.from(new Set(records.map((record) => getYearFromDateString(record.startDate)))).sort(
     (left, right) => right - left
   );
 }
