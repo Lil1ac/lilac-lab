@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   getGalgameBySlug,
+  getYearFromDateString,
   getLibraryTags,
   getLibraryYears,
   getSortedAndFilteredLibrary
@@ -52,6 +53,11 @@ const records: GalgameRecord[] = [
 ];
 
 describe("library helpers", () => {
+  it("parses the written ISO year without local timezone conversion", () => {
+    expect(getYearFromDateString("2024-01-01")).toBe(2024);
+    expect(getYearFromDateString("2024-12-31")).toBe(2024);
+  });
+
   it("filters by status and sorts by rating", () => {
     const result = getSortedAndFilteredLibrary(records, {
       status: "completed",

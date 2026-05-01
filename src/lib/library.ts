@@ -1,6 +1,6 @@
 import type { GalgameRecord, LibraryFilters } from "./types";
 
-function getYearFromDateString(date: string) {
+export function getYearFromDateString(date: string) {
   return Number(date.slice(0, 4));
 }
 
