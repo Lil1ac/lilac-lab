@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Lilac Lab",
-  description: "涓汉涓婚〉銆侀」鐩€佸崥瀹笌 Galgame Library銆?"
+  description: "个人主页、项目、博客与 Galgame Library。"
 };
 
 export default function RootLayout({
