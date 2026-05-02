@@ -1,13 +1,14 @@
 {
   "name": "Lilac",
   "handle": "Lilac Lab",
-  "status": "构建个人主页、开发工具与长期记录系统",
+  "status": "Full-stack builder focused on AI-native tools, workflow systems, and personal software.",
   "location": "China",
   "directions": [
-    "Frontend",
-    "Full-stack",
+    "AI Applications",
+    "Full-stack Web",
     "Personal Tools",
-    "Gal Tracker"
+    "Workflow Systems",
+    "Game & Media Utilities"
   ],
   "links": [
     {
