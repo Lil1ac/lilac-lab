@@ -1,54 +1,5 @@
-export const nowItems = [
-  {
-    label: "Current Build",
-    title: "Lilac Lab",
-    description: "把个人主页整理成长期维护的项目入口、记录索引和工具工作台。",
-    href: "/projects"
-  },
-  {
-    label: "Active Tool",
-    title: "Gal Tracker",
-    description: "本地 Galgame 记录工具开发中，未来由它向主页输出公开展示数据。",
-    href: "/projects"
-  },
-  {
-    label: "Writing Queue",
-    title: "开发记录与设计复盘",
-    description: "先用文章索引记录方向，后续再升级为站内 MDX 博客详情。",
-    href: "/blog"
-  }
-];
+import siteContent from "../../content/site.json";
 
-export const workbenchItems = [
-  {
-    title: "Projects",
-    description: "展示正在维护或值得长期记录的项目。",
-    file: "src/data/projects.ts",
-    action: "新增项目卡片"
-  },
-  {
-    title: "Posts",
-    description: "整理文章、复盘、想法和外部链接。",
-    file: "src/data/posts.ts",
-    action: "新增文章索引"
-  },
-  {
-    title: "Profile",
-    description: "维护个人身份、方向、链接和当前状态。",
-    file: "src/data/profile.ts",
-    action: "更新个人信息"
-  },
-  {
-    title: "Gal Tracker",
-    description: "等待本地工具稳定后接入公开 Galgame 记录。",
-    file: "src/data/galgames.ts",
-    action: "未来导入记录"
-  }
-];
-
-export const contentPrinciples = [
-  "项目优先写真实状态，不用完成度包装未完成项目。",
-  "博客先做索引，等文章数量稳定后再升级 MDX 详情页。",
-  "Galgame 数据以 gal-tracker 为主源，主页只展示公开字段。",
-  "每次新增内容后运行 lint、test、build，确认页面仍可上线。"
-];
+export const nowItems = siteContent.nowItems;
+export const workbenchItems = siteContent.workbenchItems;
+export const contentPrinciples = siteContent.contentPrinciples;

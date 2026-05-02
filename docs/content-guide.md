@@ -1,10 +1,12 @@
 # Content Guide
 
-这个站点目前使用静态 TypeScript 数据维护公开内容。大多数日常更新只需要修改 `src/data` 下的文件。
+这个站点目前使用 `content/*.json` 维护公开内容，`src/data` 只负责把 JSON 包装成类型安全的数据。
+
+可以先打开 `/admin` 查看当前内容类型、数量和对应文件。
 
 ## 修改个人信息
 
-文件：`src/data/profile.ts`
+文件：`content/profile.json`
 
 适合放：
 
@@ -15,7 +17,7 @@
 
 ## 增加项目
 
-文件：`src/data/projects.ts`
+文件：`content/projects.json`
 
 新增一条：
 
@@ -35,7 +37,7 @@
 
 ## 增加文章索引
 
-文件：`src/data/posts.ts`
+文件：`content/posts.json`
 
 新增一条：
 
@@ -53,9 +55,20 @@
 
 ## Galgame 数据
 
-文件：`src/data/galgames.ts`
+文件：`content/galgames.json`
 
 现在保持为空。未来由 `gal-tracker` 导出公开数据后再接入，主页不直接同步 Bangumi 收藏。
+
+## 管理面板
+
+路径：`/admin`
+
+当前 `/admin` 是内容控制面板和维护入口，用来查看内容数量、字段和文件位置。它还不是可写 CMS。
+
+后续有两种升级路线：
+
+- 升级 Tailwind 4 后接入 Outstatic 2.x。
+- 保持当前样式系统，接入独立 Git-backed Dashboard 或自建写入 Git 的后台。
 
 ## 更新后验证
 
