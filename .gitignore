@@ -29,3 +29,4 @@ Thumbs.db
 
 # local git worktrees
 .worktrees/
+.vercel
