@@ -6,9 +6,9 @@ import { buildMetrics } from "@/lib/content";
 const labels = {
   projects: "Projects",
   posts: "Posts",
-  galgames: "Galgame",
+  galgames: "Library Items",
   completedGalgames: "Completed",
-  playHours: "Play Hours"
+  playHours: "Tracked Hours"
 };
 
 export function SignalMetrics() {

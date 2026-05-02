@@ -4,10 +4,19 @@ export const projects: Project[] = [
   {
     slug: "lilac-lab",
     title: "Lilac Lab",
-    description: "深色科幻数据面板风个人主页，整合项目、博客与 Galgame Library。",
+    description: "我的个人主页与数字档案面板，用来整理项目、文章、工具开发和长期记录。",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     featured: true,
-    updatedAt: "2026-05-01",
+    updatedAt: "2026-05-02",
     href: "https://github.com/Lil1ac/lilac-lab"
+  },
+  {
+    slug: "gal-tracker",
+    title: "Gal Tracker",
+    description: "正在开发中的本地 Galgame 记录工具，目标是管理游玩状态、进度、评分、笔记和本地资料。",
+    tags: ["Personal Software", "Tracking", "Galgame"],
+    featured: true,
+    updatedAt: "2026-05-02",
+    href: "/projects"
   }
 ];
