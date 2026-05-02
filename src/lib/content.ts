@@ -27,7 +27,7 @@ export function buildActivityFeed({ projects, posts, galgames }: ContentInput) {
     ...posts.map((post) => ({
       type: "post" as const,
       label: post.title,
-      href: `/blog/${post.slug}`,
+      href: "/blog",
       date: post.publishedAt
     })),
     ...galgames.map((game) => ({

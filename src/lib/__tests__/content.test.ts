@@ -87,7 +87,7 @@ describe("content helpers", () => {
       {
         type: "post",
         label: "Post",
-        href: "/blog/post",
+        href: "/blog",
         date: "2026-04-25"
       },
       {

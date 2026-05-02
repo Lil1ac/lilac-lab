@@ -3,7 +3,7 @@ import type { Post } from "@/lib/types";
 
 export function PostCard({ post }: { post: Post }) {
   return (
-    <Link href={`/blog/${post.slug}`} className="panel block rounded-lg p-5 transition hover:border-violet-200/45">
+    <Link href="/blog" className="panel block rounded-lg p-5 transition hover:border-violet-200/45">
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-lg font-semibold text-cyan-50">{post.title}</h3>
         <span className="text-xs text-violet-200/70">{post.publishedAt}</span>
