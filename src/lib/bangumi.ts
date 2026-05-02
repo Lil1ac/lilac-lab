@@ -45,6 +45,10 @@ export async function getBangumiSubject(id: number): Promise<BangumiSubject | un
 
     const subject = (await response.json()) as BangumiSubjectResponse;
 
+    if (typeof subject.id !== "number" || typeof subject.name !== "string" || subject.name.length === 0) {
+      return undefined;
+    }
+
     return {
       id: subject.id,
       name: subject.name,

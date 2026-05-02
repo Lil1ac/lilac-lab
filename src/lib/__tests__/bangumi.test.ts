@@ -12,6 +12,34 @@ describe("bangumi client", () => {
     await expect(getBangumiSubject(253997)).resolves.toBeUndefined();
   });
 
+  it("returns undefined when subject response is missing id", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({
+          name: "Summer Pockets"
+        })
+      })
+    );
+
+    await expect(getBangumiSubject(253997)).resolves.toBeUndefined();
+  });
+
+  it("returns undefined when subject response is missing name", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockResolvedValue({
+        ok: true,
+        json: async () => ({
+          id: 253997
+        })
+      })
+    );
+
+    await expect(getBangumiSubject(253997)).resolves.toBeUndefined();
+  });
+
   it("normalizes subject response", async () => {
     vi.stubGlobal(
       "fetch",
