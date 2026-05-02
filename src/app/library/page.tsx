@@ -4,7 +4,7 @@ import { galgames } from "@/data/galgames";
 
 export default function LibraryPage() {
   return (
-    <PageShell title="Galgame Library" description="预留给 gal-tracker 的本地 Galgame 记录展示页。">
+    <PageShell title="Library" description="预留给 gal-tracker 的本地 Galgame 记录展示页。这里未来展示游玩状态、评分、笔记和个人统计。">
       <LibraryGrid records={galgames} />
     </PageShell>
   );

@@ -24,7 +24,7 @@
       "title": "Projects",
       "description": "展示正在维护或值得长期记录的项目。",
       "file": "content/projects.json",
-      "action": "新增项目卡片"
+      "action": "新增项目索引"
     },
     {
       "title": "Posts",
@@ -37,6 +37,12 @@
       "description": "维护个人身份、方向、链接和当前状态。",
       "file": "content/profile.json",
       "action": "更新个人信息"
+    },
+    {
+      "title": "Tech Stack",
+      "description": "维护首页展示的技术栈和能力谱系。",
+      "file": "content/skills.json",
+      "action": "更新技术栈"
     },
     {
       "title": "Gal Tracker",

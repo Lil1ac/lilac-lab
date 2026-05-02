@@ -59,6 +59,20 @@ a {
   backdrop-filter: blur(18px);
 }
 
+.admin-input {
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 1px solid rgba(165, 243, 252, 0.15);
+  background: rgba(2, 6, 23, 0.62);
+  padding: 0.65rem 0.75rem;
+  color: #ecfeff;
+  outline: none;
+}
+
+.admin-input:focus {
+  border-color: rgba(165, 243, 252, 0.52);
+}
+
 .magnetic-stage {
   background:
     radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(125, 211, 252, 0.16), transparent 18rem),

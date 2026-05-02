@@ -54,7 +54,7 @@ export function ProfileEditor({ initialProfile }: { initialProfile: ProfileConte
         data,
         message: "content: update profile"
       });
-      setStatus("Saved to GitHub.");
+      setStatus("Saved to GitHub. Pull the branch locally to sync this JSON file.");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Save failed.");
     }

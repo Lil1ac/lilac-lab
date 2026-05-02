@@ -57,6 +57,19 @@ function validatePosts(data: unknown) {
   );
 }
 
+function validateSkills(data: unknown) {
+  return (
+    Array.isArray(data) &&
+    data.every(
+      (item) =>
+        isRecord(item) &&
+        typeof item.group === "string" &&
+        typeof item.focus === "string" &&
+        isStringArray(item.items)
+    )
+  );
+}
+
 export function validateContentPayload(file: string, data: unknown) {
   if (file === "content/profile.json") {
     return validateProfile(data);
@@ -68,6 +81,10 @@ export function validateContentPayload(file: string, data: unknown) {
 
   if (file === "content/posts.json") {
     return validatePosts(data);
+  }
+
+  if (file === "content/skills.json") {
+    return validateSkills(data);
   }
 
   if (file === "content/site.json" || file === "content/galgames.json") {
