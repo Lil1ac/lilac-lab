@@ -23,6 +23,7 @@ export function LibraryFilters({
         <button
           key={item.value}
           type="button"
+          aria-pressed={status === item.value}
           onClick={() => onStatusChange(item.value)}
           className={
             status === item.value
