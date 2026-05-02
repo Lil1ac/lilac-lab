@@ -4,6 +4,7 @@ import { posts } from "@/data/posts";
 import { profile } from "@/data/profile";
 import { projects } from "@/data/projects";
 import { nowItems, workbenchItems } from "@/data/siteContent";
+import Link from "next/link";
 
 const contentStats = [
   { label: "Profile Links", value: profile.links.length, file: "content/profile.json" },
@@ -17,30 +18,35 @@ const contentTypes = [
   {
     title: "个人资料",
     file: "content/profile.json",
+    href: "/admin/profile",
     fields: ["name", "handle", "status", "directions", "links"],
     description: "控制首页主标题、当前状态、方向标签和快捷入口。"
   },
   {
     title: "项目",
     file: "content/projects.json",
+    href: "/admin/projects",
     fields: ["slug", "title", "description", "tags", "featured", "updatedAt", "href"],
     description: "控制 Projects 页面和首页精选项目。"
   },
   {
     title: "文章索引",
     file: "content/posts.json",
+    href: "/admin/posts",
     fields: ["slug", "title", "excerpt", "publishedAt", "tags"],
     description: "控制 Blog 页面和首页文章预览。"
   },
   {
     title: "首页模块",
     file: "content/site.json",
+    href: "/admin",
     fields: ["nowItems", "workbenchItems", "contentPrinciples"],
     description: "控制首页 Now、内容地图和维护原则。"
   },
   {
     title: "Gal Tracker 记录",
     file: "content/galgames.json",
+    href: "/admin",
     fields: ["slug", "bangumiSubjectId", "status", "playHours", "personalRating"],
     description: "当前保持为空，未来由 gal-tracker 导出公开记录后接入。"
   }
@@ -70,7 +76,12 @@ export default function AdminPage() {
                     <h3 className="font-medium text-cyan-50">{type.title}</h3>
                     <p className="mt-2 text-sm leading-6 text-slate-300">{type.description}</p>
                   </div>
-                  <code className="text-xs text-cyan-200/80">{type.file}</code>
+                  <div className="text-right">
+                    <code className="text-xs text-cyan-200/80">{type.file}</code>
+                    <Link href={type.href} className="mt-2 block text-sm text-cyan-100">
+                      Edit
+                    </Link>
+                  </div>
                 </div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {type.fields.map((field) => (
