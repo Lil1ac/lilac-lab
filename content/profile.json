@@ -1,15 +1,15 @@
 {
   "name": "Lilac",
   "handle": "Lilac Lab",
-  "status": "构建AI应用、个人工具与工作流系统，记录从想法到产品的开发过程。",
-  "location": "China",
+  "status": "Java后端与Agent应用工程师，关注微服务架构、LLM应用和AI系统工程化落地。",
+  "location": "Shanghai / Remote",
   "directions": [
-    "AI应用",
-    "全栈开发",
-    "个人工具",
-    "工作流系统",
-    "游戏与媒体工具",
-    "技术写作"
+    "Java后端",
+    "微服务架构",
+    "Agent应用",
+    "RAG知识库",
+    "工作流编排",
+    "AI工程化"
   ],
   "links": [
     {
@@ -17,20 +17,12 @@
       "href": "https://github.com/Lil1ac"
     },
     {
-      "label": "项目",
+      "label": "Projects",
       "href": "/projects"
     },
     {
-      "label": "博客",
+      "label": "Blog",
       "href": "/blog"
-    },
-    {
-      "label": "关于",
-      "href": "/about"
-    },
-    {
-      "label": "邮箱",
-      "href": "mailto:2928776248@qq.com"
     }
   ]
 }
