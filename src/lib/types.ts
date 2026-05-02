@@ -16,6 +16,12 @@ export type Post = {
   tags: string[];
 };
 
+export type SkillGroup = {
+  group: string;
+  focus: string;
+  items: string[];
+};
+
 export type GalgameStatus = "wishlist" | "playing" | "completed" | "paused";
 
 export type GalgameRecord = {
