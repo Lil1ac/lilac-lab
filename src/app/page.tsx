@@ -1,27 +1,23 @@
-import { PostCard } from "@/components/cards/PostCard";
-import { ProjectCard } from "@/components/cards/ProjectCard";
-import { DashboardHero } from "@/components/home/DashboardHero";
+import { ActivityFeed } from "@/components/home/ActivityFeed";
+import { CommandDeckHero } from "@/components/home/CommandDeckHero";
+import { ContactDock } from "@/components/home/ContactDock";
+import { FeaturedShowcase } from "@/components/home/FeaturedShowcase";
 import { NowPanel } from "@/components/home/NowPanel";
-import { WorkbenchPanel } from "@/components/home/WorkbenchPanel";
-import { posts } from "@/data/posts";
-import { projects } from "@/data/projects";
+import { SystemsMap } from "@/components/home/SystemsMap";
+import { WritingLogs } from "@/components/home/WritingLogs";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto min-h-screen max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <DashboardHero />
-      <NowPanel />
-      <section className="mt-10 grid gap-4 lg:grid-cols-2">
-        {projects
-          .filter((project) => project.featured)
-          .map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
-        {posts.slice(0, 2).map((post) => (
-          <PostCard key={post.slug} post={post} />
-        ))}
+    <main className="mx-auto min-h-screen max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <CommandDeckHero />
+      <FeaturedShowcase />
+      <WritingLogs />
+      <SystemsMap />
+      <section className="mt-16 grid gap-4 lg:grid-cols-[1fr_0.85fr]">
+        <NowPanel />
+        <ActivityFeed />
       </section>
-      <WorkbenchPanel />
+      <ContactDock />
     </main>
   );
 }

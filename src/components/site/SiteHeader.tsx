@@ -16,7 +16,7 @@ export function SiteHeader() {
         <Link href="/" className="font-semibold tracking-[0.18em] text-cyan-100">
           LILAC LAB
         </Link>
-        <nav className="flex gap-1 overflow-x-auto text-sm text-slate-300">
+        <nav className="no-scrollbar flex min-w-0 max-w-[calc(100vw-7rem)] gap-1 overflow-x-auto text-sm text-slate-300">
           {navItems.map((item) => (
             <Link
               key={item.href}

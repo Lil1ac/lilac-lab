@@ -79,18 +79,21 @@ describe("content helpers", () => {
   it("builds feed item type, href, label, and date", () => {
     expect(buildActivityFeed({ projects, posts, galgames })).toEqual([
       {
+        id: "galgame-game",
         type: "galgame",
         label: "Game",
         href: "/library/game",
         date: "2026-04-28"
       },
       {
+        id: "post-post",
         type: "post",
         label: "Post",
         href: "/blog",
         date: "2026-04-25"
       },
       {
+        id: "project-project",
         type: "project",
         label: "Project",
         href: "/projects",

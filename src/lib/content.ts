@@ -19,18 +19,21 @@ export function buildMetrics({ projects, posts, galgames }: ContentInput) {
 export function buildActivityFeed({ projects, posts, galgames }: ContentInput) {
   return [
     ...projects.map((project) => ({
+      id: `project-${project.slug}`,
       type: "project" as const,
       label: project.title,
       href: project.href,
       date: project.updatedAt
     })),
     ...posts.map((post) => ({
+      id: `post-${post.slug}`,
       type: "post" as const,
       label: post.title,
       href: "/blog",
       date: post.publishedAt
     })),
     ...galgames.map((game) => ({
+      id: `galgame-${game.slug}`,
       type: "galgame" as const,
       label: game.title,
       href: `/library/${game.slug}`,

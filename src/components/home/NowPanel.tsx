@@ -3,7 +3,7 @@ import { nowItems } from "@/data/siteContent";
 
 export function NowPanel() {
   return (
-    <section className="mt-10">
+    <section>
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/70">Now</p>
