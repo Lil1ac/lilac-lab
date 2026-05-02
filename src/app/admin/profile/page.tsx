@@ -4,7 +4,7 @@ import { profile } from "@/data/profile";
 
 export default function AdminProfilePage() {
   return (
-    <PageShell title="Edit Profile" description="通过表单修改个人信息，并保存到 GitHub 的 content/profile.json。">
+    <PageShell title="Edit Profile" description="维护主页首屏、About 页面和站点导航中使用的个人资料。">
       <ProfileEditor initialProfile={profile} />
     </PageShell>
   );

@@ -43,7 +43,7 @@ export function PostsEditor({ initialPosts }: { initialPosts: Post[] }) {
         data: posts,
         message: "content: update posts"
       });
-      setStatus("Saved to GitHub.");
+      setStatus("Saved to GitHub. Pull the branch locally to sync this JSON file.");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Save failed.");
     }

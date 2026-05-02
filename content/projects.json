@@ -2,11 +2,13 @@
   {
     "slug": "lilac-lab",
     "title": "Lilac Lab",
-    "description": "我的个人主页与数字档案面板，用来整理项目、文章、工具开发和长期记录11111111。",
+    "description": "一个可持续维护的个人主页，不只是静态展示页，而是用于记录个人项目、开发日志、技术能力和长期创作的个人空间。当前支持通过后台编辑个人信息、项目、文章和技能数据，减少频繁修改页面代码的成本。",
     "tags": [
       "Next.js",
+      "React",
       "TypeScript",
-      "Tailwind"
+      "Tailwind CSS",
+      "Content System"
     ],
     "featured": true,
     "updatedAt": "2026-05-02",
@@ -15,7 +17,7 @@
   {
     "slug": "gal-tracker",
     "title": "Gal Tracker",
-    "description": "正在开发中的本地 Galgame 记录工具，目标是管理游玩状态、进度、评分、笔记和本地资料。",
+    "description": "一个面向视觉小说和PC游戏的自动记录工具，通过检测本地游戏进程识别当前运行状态，并自动统计游玩时间。它将用户手动维护的游玩进度与系统自动识别的运行状态分离，目标是让个人游戏记录更加自然、准确和低打扰。",
     "tags": [
       "Personal Software",
       "Tracking",

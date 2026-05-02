@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function AdminProjectsPage() {
   return (
-    <PageShell title="Edit Projects" description="新增、删除或修改项目，并保存到 GitHub 的 content/projects.json。">
+    <PageShell title="Edit Projects" description="新增、删除或修改项目索引，并保存到 GitHub 的 content/projects.json。">
       <ProjectsEditor initialProjects={projects} />
     </PageShell>
   );

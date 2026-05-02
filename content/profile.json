@@ -1,13 +1,15 @@
 {
-  "name": "Lilac1",
+  "name": "Lilac",
   "handle": "Lilac Lab",
-  "status": "构建个人主页、开发工具与长期记录系统",
-  "location": "China",
+  "status": "Java后端与Agent应用工程师，关注微服务架构、LLM应用和AI系统工程化落地。",
+  "location": "Shanghai / Remote",
   "directions": [
-    "Frontend",
-    "Full-stack",
-    "Personal Tools",
-    "Gal Tracker"
+    "Java后端",
+    "微服务架构",
+    "Agent应用",
+    "RAG知识库",
+    "工作流编排",
+    "AI工程化"
   ],
   "links": [
     {

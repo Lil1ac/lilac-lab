@@ -45,7 +45,7 @@ export function ProjectsEditor({ initialProjects }: { initialProjects: Project[]
         data: projects,
         message: "content: update projects"
       });
-      setStatus("Saved to GitHub.");
+      setStatus("Saved to GitHub. Pull the branch locally to sync this JSON file.");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Save failed.");
     }
