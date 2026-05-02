@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Lilac Lab",
-  description: "个人主页、项目、博客与 Galgame Library。"
+  description: "Lilac 的个人主页，记录项目、开发工具、文章和长期维护的个人系统。"
 };
 
 export default function RootLayout({
