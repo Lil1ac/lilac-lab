@@ -21,6 +21,14 @@
     {
       "label": "Blog",
       "href": "/blog"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:2928776248@qq.com"
     }
   ]
 }
