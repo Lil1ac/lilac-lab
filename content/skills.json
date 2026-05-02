@@ -1,0 +1,27 @@
+[
+  {
+    "group": "Frontend",
+    "focus": "界面工程 / 交互体验",
+    "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+  },
+  {
+    "group": "Backend",
+    "focus": "数据接口 / 内容工作流",
+    "items": ["Node.js", "API Routes", "GitHub API", "JSON Content", "Auth Flow"]
+  },
+  {
+    "group": "Tooling",
+    "focus": "工程质量 / 自动化",
+    "items": ["Git", "GitHub PR", "Vitest", "ESLint", "Vercel Ready"]
+  },
+  {
+    "group": "Personal Systems",
+    "focus": "长期记录 / 本地优先",
+    "items": ["Gal Tracker", "Content Admin", "Dev Logs", "Library Archive"]
+  },
+  {
+    "group": "Creative Coding",
+    "focus": "视觉实验 / 动效",
+    "items": ["Canvas Idea", "Motion Design", "Data Visual", "Interactive UI"]
+  }
+]
