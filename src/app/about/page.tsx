@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/PageShell";
 import { profile } from "@/data/profile";
+import { contentPrinciples } from "@/data/siteContent";
 
 export default function AboutPage() {
   return (
@@ -31,6 +32,16 @@ export default function AboutPage() {
             站点内容会随项目推进逐步更新，避免用虚假的完成度填充页面。
           </p>
         </aside>
+      </section>
+      <section className="panel mt-4 rounded-lg p-6">
+        <h2 className="text-xl font-semibold text-cyan-50">内容维护方式</h2>
+        <div className="mt-5 grid gap-4 md:grid-cols-2">
+          {contentPrinciples.map((principle) => (
+            <p key={principle} className="border-l border-cyan-200/20 pl-4 text-sm leading-6 text-slate-300">
+              {principle}
+            </p>
+          ))}
+        </div>
       </section>
     </PageShell>
   );
