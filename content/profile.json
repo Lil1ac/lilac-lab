@@ -1,14 +1,15 @@
 {
   "name": "Lilac",
   "handle": "Lilac Lab",
-  "status": "Full-stack builder focused on AI-native tools, workflow systems, and personal software.",
+  "status": "构建AI应用、个人工具与工作流系统，记录从想法到产品的开发过程。",
   "location": "China",
   "directions": [
-    "AI Applications",
-    "Full-stack Web",
-    "Personal Tools",
-    "Workflow Systems",
-    "Game & Media Utilities"
+    "AI应用",
+    "全栈开发",
+    "个人工具",
+    "工作流系统",
+    "游戏与媒体工具",
+    "技术写作"
   ],
   "links": [
     {
@@ -16,19 +17,19 @@
       "href": "https://github.com/Lil1ac"
     },
     {
-      "label": "Projects",
+      "label": "项目",
       "href": "/projects"
     },
     {
-      "label": "Blog",
+      "label": "博客",
       "href": "/blog"
     },
     {
-      "label": "About",
+      "label": "关于",
       "href": "/about"
     },
     {
-      "label": "Email",
+      "label": "邮箱",
       "href": "mailto:2928776248@qq.com"
     }
   ]
